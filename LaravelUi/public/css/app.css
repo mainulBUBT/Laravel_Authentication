@@ -11286,3 +11286,10 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+
+.profile img{
+	width: 200px;
+	height: 200px;
+	margin: auto;
+	display: block;
+}
