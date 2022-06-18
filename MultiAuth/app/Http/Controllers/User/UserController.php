@@ -43,4 +43,9 @@ class UserController extends Controller
             return redirect()->route('user.login')->with('fail','Incorrect credentials');
         }
     }
+
+    function logout(){
+        Auth::guard('web')->logout();
+        return redirect('/');
+    }
 }
