@@ -12,7 +12,7 @@
         <div class="row">
             <div class="col-md-4 offset-md-4" style="margin-top: 45px;">
                   <h4>User Login</h4><hr>
-                  <form action="{{ route('user.check') }}" method="post">
+                  <form action="{{ route('user.confirm_login') }}" method="post">
                     @if (Session::get('fail'))
                         <div class="alert alert-danger">
                             {{ Session::get('fail') }}
